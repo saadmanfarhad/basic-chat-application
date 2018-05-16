@@ -67,3 +67,14 @@ button{
     width: 100%;
     border-radius: 0 0 2px 2px;
 }
+
+button:disabled,
+button[disabled]{
+  background: #b2beb5;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+}

@@ -9,12 +9,11 @@
   <body>
     <div id="mario-chat">
       <div id="chat-window">
-        <div id="output">
-
-        </div>
+        <div id="output"></div>
+        <div id="feedback"></div>
         <input type="text" id="handle" placeholder="Handle"/>
-        <input type="text" id="message" placeholder="Message"/>
-        <button id="send">Send</button>
+        <input type="text" id="message" placeholder="Message" onkeyup="stoppedTyping()" onkeypress="keyPress()"/>
+        <button id="send" onclick="verify()">Send</button>
       </div>
     </div>
     <script src="/chat.js"></script>
